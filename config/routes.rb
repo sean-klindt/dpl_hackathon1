@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'user#index'
+  root 'users#index'
 
   resources :users do
     resources :trips
@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   resources :locations do
     resources :addresses
   end
-  
+
 end
