@@ -16,7 +16,8 @@
   5.times do
     trip = Trip.create(
       name: Faker::Superhero.name,
-      duration: Faker::Number.between(from: 1, to: 14)
+      duration: Faker::Number.between(from: 1, to: 14),
+      user_id: user.id
     )
 
     location = Location.create(
