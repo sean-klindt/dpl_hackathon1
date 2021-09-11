@@ -9,12 +9,12 @@ const Trips = ({ user, trips }) => {
       {
           trips.map( (trip) => (
             <div>
-              <h5>{trip.name}</h5>
-              <a href={`users/${id}/trips/${trip.id}`}>Show</a>
+              <h3>{trip.name}</h3>
+              <a href={`/users/${id}/trips/${trip.id}`}>Show</a>
               {' '}
-              <a href={`users/${id}}/trips/${trip.id}/edit`}>Edit</a>
+              <a href={`/users/${id}}/trips/${trip.id}/edit`}>Edit</a>
               {' '}
-              <a href={`users/${id}/trips/${trip.id}`}data-method="delete">Delete</a>
+              <a href={`/users/${id}/trips/${trip.id}`}data-method="delete">Delete</a>
             </div>
           ))
       }

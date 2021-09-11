@@ -32,7 +32,7 @@ class TripsController < ApplicationController
 
   def update
     @trip = @user.trips.find(params[:id])
-    if @trip.update(user_params)
+    if @trip.update(trip_params)
       redirect_to user_trips_path
     else
       render component: 'TripEdit', props: {trip: @trip, user: @user}
